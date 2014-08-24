@@ -86,7 +86,7 @@ class PickOne(object):
             The ask method is used to get the input from users
         """
         while True:
-            i = input(self.buildPrompt())
+            i = raw_input(self.buildPrompt())
 
             if self.cancel and i == self.cancelkey:
                 return None
