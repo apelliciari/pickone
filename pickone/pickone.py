@@ -95,11 +95,11 @@ class PickOne(object):
                 i = self.default
 
             if i in self.choices:
-                return self.choices[i]
+                return i
             else:
                 for k, v in self.choices.items():
                     if i == str(v):
-                        return self.choices[k]
+                        return k
 
             print(self.errormessage)
 
